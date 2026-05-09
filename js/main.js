@@ -66,6 +66,25 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 }
 
 /* ===========================
+   ACCESSIBILITÉ
+=========================== */
+document.querySelectorAll(
+  '.service-card__icon svg, .info-card__icon svg, .value-item__icon svg, ' +
+  '.contact-info-item__icon svg, .footer-contact-item svg, ' +
+  '.service-card__link svg, .text-link svg, .map-placeholder svg'
+).forEach(svg => svg.setAttribute('aria-hidden', 'true'));
+
+document.querySelectorAll('.service-card__link').forEach(link => {
+  const heading = link.closest('.service-card')?.querySelector('h3');
+  if (heading) link.setAttribute('aria-label', 'En savoir plus : ' + heading.textContent.trim());
+});
+
+document.querySelectorAll('.news-card .text-link, .news-full-card .text-link').forEach(link => {
+  const heading = link.closest('.news-card, .news-full-card')?.querySelector('h3');
+  if (heading) link.setAttribute('aria-label', 'Lire la suite : ' + heading.textContent.trim());
+});
+
+/* ===========================
    CONTACT FORM VALIDATION
 =========================== */
 const form = document.getElementById('contact-form');
