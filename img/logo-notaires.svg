@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 52" fill="none">
+  <!-- Placeholder — remplacer par le logo officiel Notaires de France -->
+  <path d="M22 2 L5 9 L5 25 C5 37 13 46 22 50 C31 46 39 37 39 25 L39 9 Z"
+        fill="#1B3264" stroke="#C9A96E" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Balance -->
+  <line x1="22" y1="16" x2="22" y2="36" stroke="#C9A96E" stroke-width="1.2"/>
+  <line x1="14" y1="21" x2="30" y2="21" stroke="#C9A96E" stroke-width="1.2"/>
+  <!-- Plateaux -->
+  <path d="M14 21 C12 24 12 27 14 27 C16 27 18 24 18 21" fill="none" stroke="#C9A96E" stroke-width="1"/>
+  <path d="M30 21 C28 24 28 27 30 27 C32 27 34 24 34 21" fill="none" stroke="#C9A96E" stroke-width="1"/>
+  <!-- Socle -->
+  <line x1="19" y1="36" x2="25" y2="36" stroke="#C9A96E" stroke-width="1.2"/>
+</svg>
